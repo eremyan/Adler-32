@@ -1,1 +1,1 @@
-# Adler-32
+#  studyMake
