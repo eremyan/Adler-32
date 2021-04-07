@@ -13,12 +13,12 @@ all: debug release
 debug: $(debug_exec)
 
 hello-dbg: $(source) 
-        g++ $(debug_flags) hello.cpp -o $(debug_exec) 
+        g++ $(debug_flags) $(source) -o $(debug_exec) 
 
 release: $(release_exec)
 
 hello: $(source) 
-        g++ $(release_flags) hello.cpp -o $(release_exec)
+        g++ $(release_flags) $(source) -o $(release_exec)
 
 clean:
         rm -f $(release_exec) $(debug_exec) 
